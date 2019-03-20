@@ -1,0 +1,19 @@
+.on-stage-member {
+  color: white;
+  min-width: 200px;
+  text-align: center;
+  margin: 5px;
+  border: 4px solid black;
+}
+
+.on-stage-member h2 {
+  background-color: rgb(31, 31, 31);
+}
+
+.on-stage-member img {
+  width: 60px;
+  margin: auto;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+

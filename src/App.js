@@ -1,28 +1,17 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Party from './Party.js';
+import Stage from './Stage.js';
+import Chat from './Chat.js';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+function App(props) {
+  //console.log(props.store.participants);
+  return (
+    <main className='App'>
+      <Party className='party-list' members={props.store.participants} />
+      <Chat className='chat-list' events={props.store.chatEvents} members={props.store.participants}/>
+      <Stage className='stage' members={props.store.participants} />
+    </main>
+  );
 }
 
 export default App;

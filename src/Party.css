@@ -1,0 +1,24 @@
+ul {
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+.on-stage-status {
+  display: block;
+}
+
+.party-avatar {
+  max-width: 40px;
+  border-radius: 50%;
+}
+
+.in-session {
+  display: block;
+  background-color: lightgreen;
+  width: 10px;
+  min-height: 10px;
+  border-radius: 50%;
+}

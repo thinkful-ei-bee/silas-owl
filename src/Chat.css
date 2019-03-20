@@ -1,0 +1,16 @@
+ul {
+  display: inline-block;
+}
+
+.event-avatar {
+  max-width: 40px;
+  border-radius: 50%;
+}
+
+.event-action{
+  display: block;
+}
+
+.event-message {
+  display: block;
+}
